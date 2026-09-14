@@ -1,0 +1,34 @@
+{
+  "name": "security-skills",
+  "version": "1.0.0",
+  "description": "Security audit skills for AI coding agents — finds and fixes authorization logic bugs (BAC, IDOR, auth flaws, mass assignment, privilege escalation)",
+  "main": "scripts/install.cjs",
+  "scripts": {
+    "postinstall": "node scripts/setup.js",
+    "preuninstall": "node scripts/uninstall.cjs",
+    "list": "node scripts/cli.cjs list"
+  },
+  "bin": {
+    "security-skills": "scripts/cli.cjs"
+  },
+  "files": [
+    "skills/",
+    "scripts/"
+  ],
+  "keywords": [
+    "security",
+    "skills",
+    "audit",
+    "claude",
+    "agent",
+    "bac",
+    "idor",
+    "access-control",
+    "owasp"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=16"
+  },
+  "type": "module"
+}
